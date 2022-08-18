@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -45,7 +45,6 @@ a {
   background: url("wrapper_image.png") center no-repeat fixed;
   text-align: center;
   padding: 0 1em;
-
 }
 
 .headline_caption {
@@ -81,7 +80,6 @@ a {
   line-height: 20px;
 }
 
-
 .descriptive_paragraph {
   margin-bottom: 0;
   padding-bottom: 2rem;
@@ -97,7 +95,7 @@ a {
   border-bottom: 1px solid #646369;
 }
 
-.ability_column h3{
+.ability_column h3 {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   justify-self: flex-start;
