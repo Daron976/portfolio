@@ -27,6 +27,7 @@ body {
 
 .intro {
   height: 80px;
+  align-items: center;
 }
 
 .portfolio_nav {
@@ -36,17 +37,14 @@ body {
   width: 350px;
 }
 
-.home_link {
+.home_link,
+.ability_header {
   font-size: 18px;
   font-weight: 500;
 }
 
 .links {
   display: none;
-}
-
-.intro {
-  align-items: center;
 }
 
 .developer {
@@ -62,7 +60,6 @@ body {
   font-size: 26px;
   font-weight: 400;
   line-height: 20px;
-  
 }
 
 .descriptive_paragraph {
@@ -98,20 +95,17 @@ body {
   margin-top: 10px;
 }
 
-.ability_column li {
+li .ability_column {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
 
 .ability_header {
-  font-weight: 500;
   color: #7d73fc;
   font-size: 12px;
   line-height: 24px;
 }
-
-
 
 li {
   list-style: none;
@@ -145,6 +139,7 @@ ul {
   text-align: center;
   padding: 0 140px 0;
 }
+
 img {
   position: absolute;
   left: 0;
