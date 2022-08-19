@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -125,7 +127,8 @@ img {
   margin-bottom: 0.7rem;
 }
 
-.work h2 {
+.work h2,
+.contact_us h2 {
   font-weight: 700;
   font-size: 2.2em;
   color: #7d73fc;
@@ -135,9 +138,12 @@ img {
 .work_two,
 .work_three,
 .work_four {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   width: 350px;
+  margin: 1rem;
 }
 
 .work {
@@ -192,11 +198,31 @@ img {
 }
 
 .contact_us {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   gap: 1rem;
   margin-top: 2rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
+}
+
+.contact_us h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact_us .work_info {
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 input {
@@ -205,24 +231,20 @@ input {
   line-height: 30px;
 }
 
-.contact_us h2 {
-  margin: 0;
-}
-
 .customer_info {
   width: 350px;
   height: 150px;
-  text-align: center;
 }
 
 .btn_links {
   display: flex;
   flex-direction: column;
-  justify-self: center;
+  align-items: center;
   gap: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-.left_border {
-  border-left: 2px solid #646369;
-  padding-left: 1rem;
+input[type="email"]::-webkit-input-placeholder {
+  color: #191765;
 }
+
