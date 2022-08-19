@@ -27,6 +27,8 @@ a {
   justify-content: space-between;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background: #191765;
 }
 
@@ -42,9 +44,8 @@ a {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("wrapper_image.png") center no-repeat content-box;
+  background: url("wrapper_image.png") center no-repeat;
   text-align: center;
-  padding: auto;
 }
 
 .headline_caption {
@@ -119,15 +120,12 @@ a {
 }
 
 img {
-  height: 260px;
-  width: 425px;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 0.7rem;
 }
 
 .work h2 { 
-  grid-area: header; 
-  text-align: left;
-  width: 100%;
-  margin-left: 4rem;
   font-weight: 700;
   font-size: 2.2em;
   color: #7d73fc;
@@ -137,42 +135,25 @@ img {
 .work_two,
 .work_three, 
 .work_four { 
-  grid-area: work_one;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1em;
-  margin: 1em;
-  width: 100%;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 350px;
 }
-
-.work_two,
-.work_four {
-  flex-direction: row-reverse;
-}
-
-.work_two { grid-area: work_two; }
-
-.work_three { grid-area: work_three; }
-
-.work_four { grid-area: work_four; }
 
 .work {
   display: grid;
-  grid-template-areas: 
-  'header'
-  'work_one'
-  'work_two'
-  'work_three'
-  'work_four';
-  justify-content: center;
+  place-content: center;
+  background: 
+   url("Ellipse_19.png") -30px -110px no-repeat,
+   url("Ellipse_20.png") 1610px 170px no-repeat,
+   url("Ellipse_22.png") 1484px 975px no-repeat,
+   url("Ellipse_21.png") -175px 800px no-repeat;
+  width: 100%;
+  gap: 2.5rem;
   justify-items: center;
 }
 
 .work p {
-  width: 345px;
   margin-bottom: 1rem;
 }
 
@@ -186,14 +167,62 @@ img {
 }
 
 .btn {
-  width: 105px;
-  height: 55px;
-  font-weight: 500;
   font-size: 0.85rem;
-  line-height: 20px;
-  text-align: center;
   color: white;
   background-color: #9390ff;
   border: none;
   border-radius: 5px;
+  padding: 1em 2em;
+}
+
+.btn:hover {
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.btn:active {
+  background-color: #5e42d7;;
+}
+
+.btn:disabled {
+  background-color: #2A2B33;
+}
+
+.btn:enabled {
+  background-color: #7d73fc;
+}
+
+.contact_us {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+input {
+  width: 350px;
+  height: 50px;
+  line-height: 30px;
+}
+
+.contact_us h2 {
+  margin: 0;
+}
+
+.customer_info {
+  width: 350px;
+  height: 150px;
+  text-align: center;
+}
+
+.btn_links{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1rem;
+}
+
+.left_border {
+  border-left: 2px solid #646369;
+  padding-left: 1rem;
 }
