@@ -47,7 +47,7 @@ a {
   width: 100%;
   height: 100vh;
   background:
-    url("Ellipse18.png") 0px 175px no-repeat,
+    url("Ellipse18.png") 0 175px no-repeat,
     url("circle.png") 265px 495px no-repeat;
   text-align: center;
 }
