@@ -122,9 +122,17 @@ a {
 }
 
 img {
-  height: 250px;
-  width: 100%;
+  flex: none;
+  flex-grow: 0;
+  height: 236px;
+  width: 327px;
   margin-bottom: 0.7rem;
+}
+
+.work h2 {
+  margin-left: -5rem;
+  margin-right: 5rem;
+  width: 50%;
 }
 
 .work h2,
@@ -157,6 +165,7 @@ img {
   width: 100%;
   gap: 2.5rem;
   justify-items: center;
+  margin: 5rem 0;
 }
 
 .work p {
@@ -177,8 +186,7 @@ img {
   color: white;
   background-color: #9390ff;
   border: none;
-  border-radius: 5px;
-  padding: 1em 2em;
+  padding: 1.5em 1em;
 }
 
 .btn:hover {
@@ -198,7 +206,7 @@ img {
 }
 
 .contact_us {
-  display: flex;
+  display: none;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -206,6 +214,7 @@ img {
   margin-top: 2rem;
   text-align: center;
   padding: 1rem 2rem;
+  width: 100%;
 }
 
 .contact_us h2 {
@@ -223,6 +232,7 @@ img {
 .contact_us .work_info {
   padding: 1rem 2rem;
   text-align: center;
+  width: 327px;
 }
 
 input {
@@ -242,6 +252,10 @@ input {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.2rem;
+}
+
+.btn_links .btn {
+  display: none;
 }
 
 input[type="email"]::-webkit-input-placeholder {
