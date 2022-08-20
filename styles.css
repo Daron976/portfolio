@@ -46,7 +46,9 @@ a {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("wrapper_image.png") center no-repeat;
+  background:
+    url("Ellipse18.png") 0px 175px no-repeat,
+    url("circle.png") 265px 495px no-repeat;
   text-align: center;
 }
 
@@ -161,7 +163,7 @@ img {
     url("Ellipse_19.png") -30px -110px no-repeat,
     url("Ellipse_20.png") 1610px 170px no-repeat,
     url("Ellipse_22.png") 1484px 975px no-repeat,
-    url("Ellipse_21.png") -110px 895px no-repeat;
+    url("Ellipse_21.png") -11px 800px no-repeat;
   width: 100%;
   gap: 2.5rem;
   justify-items: center;
