@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -27,6 +29,8 @@ a {
   justify-content: space-between;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background: #191765;
 }
 
@@ -42,9 +46,10 @@ a {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("wrapper_image.png") center no-repeat fixed;
+  background:
+    url("Ellipse18.png") 0 175px no-repeat,
+    url("circle.png") 265px 495px no-repeat;
   text-align: center;
-  padding: 0 1em;
 }
 
 .headline_caption {
@@ -73,7 +78,8 @@ a {
   color: #7d73fc;
 }
 
-.occupation {
+.occupation,
+.work h3 {
   margin: 5px 0 20px;
   font-size: 26px;
   font-weight: 400;
@@ -110,8 +116,150 @@ a {
   font-size: 0.7rem;
 }
 
-.social_media_links {
+.social_media_links,
+.work ul {
   display: flex;
   gap: 1rem;
   margin-top: 1.2rem;
+}
+
+img {
+  flex: none;
+  flex-grow: 0;
+  height: 236px;
+  width: 327px;
+  margin-bottom: 0.7rem;
+}
+
+.work h2 {
+  margin-left: -5rem;
+  margin-right: 5rem;
+  width: 50%;
+}
+
+.work h2,
+.contact_us h2 {
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #7d73fc;
+}
+
+.work_one,
+.work_two,
+.work_three,
+.work_four {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 1rem;
+}
+
+.work {
+  display: grid;
+  place-content: center;
+  background:
+    url("Ellipse_19.png") -30px -110px no-repeat,
+    url("Ellipse_20.png") 1610px 170px no-repeat,
+    url("Ellipse_22.png") 1484px 975px no-repeat,
+    url("Ellipse_21.png") -11px 800px no-repeat;
+  width: 100%;
+  gap: 2.5rem;
+  justify-items: center;
+  margin: 5rem 0;
+}
+
+.work p {
+  margin-bottom: 1rem;
+}
+
+.work li {
+  border-right: 2px solid #646369;
+  padding-right: 0.7rem;
+}
+
+.work ul {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  font-size: 0.85rem;
+  color: white;
+  background-color: #9390ff;
+  border: none;
+  padding: 1.5em 1em;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.btn:active {
+  background-color: #5e42d7;
+}
+
+.btn:disabled {
+  background-color: #2a2b33;
+}
+
+.btn:enabled {
+  background-color: #7d73fc;
+}
+
+.contact_us {
+  display: none;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.contact_us h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact_us .work_info {
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 327px;
+}
+
+input {
+  width: 350px;
+  height: 50px;
+  line-height: 30px;
+}
+
+.customer_info {
+  width: 350px;
+  height: 150px;
+}
+
+.btn_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn_links .btn {
+  display: none;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #191765;
 }
