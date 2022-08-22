@@ -183,6 +183,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.languages {
+  float: left;
+}
+
 .btn {
   font-size: 0.85rem;
   color: white;
