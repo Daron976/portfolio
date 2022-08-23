@@ -43,13 +43,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100vh;
   background:
     url("Ellipse18.png") 0 175px no-repeat,
     url("circle.png") 295px 370px no-repeat;
   text-align: center;
+}
+
+.arrow_down {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #a2a3ae;
+  margin: 0 149px 83px 149px;
 }
 
 .headline_caption {
@@ -123,17 +132,21 @@ a {
   margin-top: 1.2rem;
 }
 
+.social_media_links {
+  margin-top: 25px;
+}
+
+.headline .social_media_links {
+  margin-top: 58px;
+  margin-bottom: 38px;
+}
+
 img {
   flex: none;
   flex-grow: 0;
   height: 236px;
   width: 327px;
   margin-bottom: 0.7rem;
-}
-
-.work h2 {
-  width: 327px;
-  text-align: left;
 }
 
 .work h2,
@@ -143,13 +156,20 @@ img {
   color: #7d73fc;
 }
 
+.work h2 {
+  width: 327px;
+  text-align: left;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+}
+
 .work_element {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
   flex-direction: column;
   width: 327px;
-  margin: 1rem;
   gap: 3.5rem;
 }
 
@@ -169,7 +189,6 @@ img {
   width: 100%;
   gap: 2.5rem;
   justify-items: center;
-  margin: 5rem 0;
 }
 
 .work p {
@@ -196,7 +215,9 @@ img {
   color: white;
   background-color: #9390ff;
   border: none;
-  padding: 1.5em 1em;
+  padding: 12px;
+  height: 48px;
+  gap: 10;
 }
 
 .btn:hover {
@@ -220,10 +241,9 @@ img {
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 120px;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0;
   width: 100%;
   align-items: center;
 }
@@ -237,14 +257,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  padding-bottom: 71px;
+  border-bottom: 1px solid #3a3837;
 }
 
 .contact_us .work_info {
-  padding: 1rem 2rem;
   text-align: center;
   width: 327px;
-  position: relative;
+  margin: 24px 24px 40px 24px;
 }
 
 input {
@@ -252,10 +272,12 @@ input {
   height: 50px;
   line-height: 30px;
   padding: 15px 16px;
+  margin: 0 24px 24px 24px;
 }
 
 textarea {
   padding: 12px;
+  margin: 0 24px 40px 24px;
 }
 
 .customer_info {
