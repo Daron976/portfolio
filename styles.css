@@ -48,7 +48,7 @@ a {
   height: 100vh;
   background:
     url("Ellipse18.png") 0 175px no-repeat,
-    url("circle.png") 265px 495px no-repeat;
+    url("circle.png") 295px 370px no-repeat;
   text-align: center;
 }
 
@@ -58,7 +58,7 @@ a {
   width: 100%;
   max-width: 340px;
   gap: 2rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 .home_link {
@@ -132,9 +132,8 @@ img {
 }
 
 .work h2 {
-  margin-left: -5rem;
-  margin-right: 5rem;
-  width: 50%;
+  width: 327px;
+  text-align: left;
 }
 
 .work h2,
@@ -144,23 +143,26 @@ img {
   color: #7d73fc;
 }
 
-.work_one,
-.work_two,
-.work_three,
-.work_four {
+.work_element {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 327px;
   margin: 1rem;
+  gap: 3.5rem;
+}
+
+.work_border {
+  padding-top: 3rem;
+  border-top: 1px solid #646369;
 }
 
 .work {
   display: grid;
   place-content: center;
   background:
-    url("Ellipse_19.png") -30px -110px no-repeat,
+    url("Ellipse_19.png") -145px 20px no-repeat,
     url("Ellipse_20.png") 1610px 170px no-repeat,
     url("Ellipse_22.png") 1484px 975px no-repeat,
     url("Ellipse_21.png") -11px 800px no-repeat;
@@ -172,6 +174,8 @@ img {
 
 .work p {
   margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  width: 327px;
 }
 
 .work li {
@@ -221,6 +225,7 @@ img {
   text-align: center;
   padding: 1rem 2rem;
   width: 100%;
+  align-items: center;
 }
 
 .contact_us h2 {
@@ -239,12 +244,18 @@ img {
   padding: 1rem 2rem;
   text-align: center;
   width: 327px;
+  position: relative;
 }
 
 input {
   width: 350px;
   height: 50px;
   line-height: 30px;
+  padding: 15px 16px;
+}
+
+textarea {
+  padding: 12px;
 }
 
 .customer_info {
@@ -258,10 +269,6 @@ input {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.2rem;
-}
-
-.btn_links .btn {
-  display: none;
 }
 
 input[type="email"]::-webkit-input-placeholder {
