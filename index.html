@@ -69,11 +69,14 @@
                 <li><i class="fa-brands fa-twitter"></i></li>
                 <li><i class="fa-brands fa-angellist"></i></li>
             </ul>
+            <div class="arrow_down">
+                <p><i class="fa-solid fa-arrow-down"></i>  Work</p>
+            </div>
         </section>
         <section class="work">  
             <h2>My recent work</h2>
             
-            <div class="work_one">
+            <div class="work_element work_border">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -91,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="work_two">
+            <div class="work_element">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -109,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="work_three">
+            <div class="work_element">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -127,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="work_four">
+            <div class="work_element">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -144,23 +147,23 @@
                     <button type="button" class="btn">See Project</button>
                 </div>
             </div>
-            </section>
-            <section>
-                <div class="contact_us">
+        </section>
+        <section>
+            <div class="contact_us">
                 <h2>CONTACT US</h2>
                 <p class="work_info">
                     If you have an application you are interested in developing,
                     a feature that you need built or a project that needs coding. 
                     I'd love to help with it 
                 </p>
-                <form name="contact_form" class="contact_form">
-                    <input type="text" placeholder="Text Input" class="name">
-                    <input type="email" placeholder="stanleyjones@gmail.com" class="email">
-                    <input type="text" placeholder="Enter text here" class="customer_info">
+                <form action="https://formspree.io/f/mwkzplvb" name="contact_form" class="contact_form" method="post">
+                    <input type="text" placeholder="Name" class="name" maxlength="30" name="Name" required>
+                    <input type="email" placeholder="Enter your email" class="email" name="Email" required>
+                    <textarea placeholder="Enter text here" class="customer_info" maxlength="500" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
                 </form>
-                </div>
-                <div class="btn_links">
-                    <button type="button" class="btn">See Project</button>
+            </div>
+            <div class="btn_links">
                     <ul class="social_media_links">
                         <li class="left_border"><i class="fa-brands fa-github"></i></li>
                         <li><i class="fa-brands fa-linkedin"></i></li>
@@ -168,7 +171,7 @@
                         <li><i class="fa-brands fa-angellist"></i></li>
                     </ul>
                     <p>baronjones976@gmail.com</p>
-                </div>
-            </section>
+            </div>
+        </section>
         </body>
     </html>
