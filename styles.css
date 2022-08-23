@@ -212,7 +212,7 @@ img {
 }
 
 .contact_us {
-  display: none;
+  display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
