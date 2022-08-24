@@ -31,7 +31,8 @@ a {
   position: absolute;
 }
 
-.links {
+.links, 
+.desktop_work_header {
   display: none;
 }
 
@@ -155,11 +156,8 @@ a {
 }
 
 img {
-  flex: none;
-  flex-grow: 0;
   height: 236px;
   width: 327px;
-  margin-bottom: 0.7rem;
 }
 
 .work h2,
@@ -176,6 +174,11 @@ img {
   font-weight: 500;
   line-height: 52px;
   align-items: center;
+}
+
+#border_top {
+  border-top: 1px solid #646369;
+  padding-top: 96px;
 }
 
 .work h3 {
@@ -198,6 +201,7 @@ img {
 
 .work {
   display: grid;
+  grid-template-columns: auto;
   place-content: center;
   background:
     url("Ellipse_19.png") -145px 20px no-repeat,
@@ -209,7 +213,7 @@ img {
   justify-items: center;
 }
 
-.work p {
+.work_info {
   margin-bottom: 1rem;
   margin-top: 3.5rem;
   width: 327px;
@@ -322,7 +326,8 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: space-around;
   }
   
-  .fa-bars {
+  .fa-bars, 
+  .mobile_work_header {
     display: none;
   }
   
@@ -377,5 +382,53 @@ input[type="email"]::-webkit-input-placeholder {
     margin: 58px 0 38px 0;
   }
 
+  .work {
+    justify-items: normal;
+    gap: 88px;
+  }
 
+  .work_element {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    width: 1156px;
+  }
+
+  .work_element_reverse {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    width: 684px;
+    height: 448px;
+  }
+
+  .work_info {
+    width: 448px;
+    height: 140px;
+    margin: 0;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .supporting_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    height: 405px;
+  }
+
+  .supporting_text button {
+    float: left;
+  }
+
+  .work h2 {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 64px;
+  }
 }
