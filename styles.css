@@ -268,6 +268,7 @@ img {
   padding: 0;
   width: 100%;
   align-items: center;
+  border-bottom: 1px solid #3a3837;
 }
 
 .contact_us h2 {
@@ -280,7 +281,6 @@ img {
   flex-direction: column;
   align-items: center;
   padding-bottom: 71px;
-  border-bottom: 1px solid #3a3837;
 }
 
 .contact_us .work_info {
@@ -307,12 +307,18 @@ textarea {
   height: 150px;
 }
 
+form button {
+  width: 65px;
+  height: 24px;
+}
+
 .btn_links {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.2rem;
+  margin-top: 25px;
 }
 
 input[type="email"]::-webkit-input-placeholder {
@@ -332,7 +338,8 @@ input[type="email"]::-webkit-input-placeholder {
   }
   
   .links, 
-  .mobile {
+  .arrow_mobile,
+  .desktop_work_header {
     display: block;
   }
 
@@ -385,6 +392,10 @@ input[type="email"]::-webkit-input-placeholder {
   .work {
     justify-items: normal;
     gap: 88px;
+    margin-top: 250px;
+    margin-bottom: 228px;
+    background:url(desktop_work_background_half_one.png) 0 200px no-repeat,
+    url(desktop_work_background_half_two.png) 1000px 760px no-repeat;
   }
 
   .work_element {
@@ -405,7 +416,6 @@ input[type="email"]::-webkit-input-placeholder {
 
   .work_info {
     width: 448px;
-    height: 140px;
     margin: 0;
     font-style: normal;
     font-size: 20px;
@@ -430,5 +440,38 @@ input[type="email"]::-webkit-input-placeholder {
     width: fit-content;
     font-weight: 700;
     font-size: 64px;
+  }
+
+  .contact_us .work_info {
+    width: 684px;
+    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 88px;
+  }
+
+  input, 
+  .customer_info {
+    width: 684px;
+    height: 48px;
+  }
+
+  .customer_info {
+    height: 136px;
+  }
+
+  form button {
+    width: 160px;
+  }
+
+  .contact_form {
+    padding-bottom: 106px;
+  }
+
+  .btn_links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
   }
 }
