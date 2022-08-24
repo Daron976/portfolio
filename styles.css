@@ -48,9 +48,8 @@ a {
   width: 100%;
   background:
     url("circle.png") -230px 0 no-repeat,
-    url("circle.png") 295px 465px no-repeat;
+    url("circle.png") 450px 465px no-repeat;
   text-align: center;
-  background-position: cover;
 }
 
 .mobile {
@@ -332,7 +331,7 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: space-around;
   }
   
-  .fa-bars, 
+  .fas, 
   .mobile_work_header {
     display: none;
   }
@@ -359,7 +358,9 @@ input[type="email"]::-webkit-input-placeholder {
   }
   
   .headline {
-    background: url("two_circles.png") 240px 115px no-repeat;
+    background:
+    url("circle.png") -75px 40px no-repeat,
+    url("circle.png") 1550px 455px no-repeat;
   }
 
   .ability {
