@@ -28,10 +28,11 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #191765;
+  position: absolute;
+}
+
+.links {
+  display: none;
 }
 
 .fa-bars {
@@ -45,9 +46,14 @@ a {
   align-items: center;
   width: 100%;
   background:
-    url("Ellipse18.png") -17px 52px no-repeat,
+    url("circle.png") -230px 0 no-repeat,
     url("circle.png") 295px 465px no-repeat;
   text-align: center;
+  background-position: cover;
+}
+
+.mobile {
+  display: none;
 }
 
 .arrow_down {
@@ -58,14 +64,13 @@ a {
   line-height: 32px;
   text-align: center;
   color: #a2a3ae;
-  margin: 0 149px 83px 149px;
 }
 
 .headline_caption {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 340px;
   margin-top: 3rem;
 }
 
@@ -109,6 +114,7 @@ a {
 
 .ability {
   display: flex;
+  justify-content: space-between;
   gap: 63px;
   flex-wrap: wrap;
   padding: 37px 44px;
@@ -139,14 +145,11 @@ a {
 .work ul {
   display: flex;
   gap: 1rem;
-  margin-top: 1.2rem;
+  justify-content: center;
 }
 
-.social_media_links {
-  margin-top: 25px;
-}
-
-.headline .social_media_links {
+.headline .social_media_links,
+.arrow_down {
   margin-top: 58px;
   margin-bottom: 38px;
 }
@@ -310,4 +313,69 @@ textarea {
 
 input[type="email"]::-webkit-input-placeholder {
   color: #191765;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .intro {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fa-bars {
+    display: none;
+  }
+  
+  .links, 
+  .mobile {
+    display: block;
+  }
+
+  .portfolio_nav ul{
+    display: flex;
+    gap: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .descriptive_paragraph {
+    line-height: 32px;
+    width: 447px;
+    height: 155px;
+  }
+  
+  .headline {
+    background: url("two_circles.png") 240px 115px no-repeat;
+  }
+
+  .ability {
+    width: 446px;
+    gap: 48px;
+  }
+
+  .ability_list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4.78px;
+  }
+
+  .headline .social_media_links,
+  .arrow_down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .headline_base {
+    display: flex;
+    gap: 345px;
+    margin: 58px 0 38px 0;
+  }
+
+
 }
