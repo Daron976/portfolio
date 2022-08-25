@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   background: #191765;
+  width: fit-content;
 }
 
 ul {
