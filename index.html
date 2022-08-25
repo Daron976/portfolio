@@ -13,11 +13,17 @@
     <body>
         <header class="intro">
                 <a href="#" class="home_link">Daron Wiafe</a>
-            <nav class="portfolio_nav">
-                <i class="fas fa-bars fa-2x"></i>
+                <nav class="portfolio_nav">
+                    <ul>
+                    <li><i class="fas fa-bars fa-2x"></i></li>
+                    <li class="links"><a href="#portfolio">Portfolio</a></li>
+                    <li class="links"><a href="#about">About</a></li>
+                    <li class="links"><a href="#contact">Contact</a></li>
+                    <li class="links"><i class="fa-solid fa-envelope"></i></li>
+                </ul>
             </nav>
         </header>
-        <section class="headline">
+        <section id="portfolio" class="headline">
             <div class="headline_caption">
                 <h1 class="developer">Daron Wiafe</h1>
                 
@@ -62,21 +68,45 @@
                     </ul>
                 </div>
     
-            </div>            
-            <ul class="social_media_links">
-                <li><i class="fa-brands fa-github"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-angellist"></i></li>
-            </ul>
-            <div class="arrow_down">
-                <p><i class="fa-solid fa-arrow-down"></i>  Work</p>
-            </div>
+            </div>    
+            <div class="headline_base">
+                <div class="arrow_down arrow_mobile">
+                    <p><i class="fa-solid fa-arrow-down"></i>  Work</p>
+                </div>
+                <ul class="social_media_links">
+                    <li><a href="https://github.com/Daron976"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/daron-wiafe-1b88141a6/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/WiafeDaron"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><i class="fa-brands fa-angellist"></i></li>
+                </ul>
+                <div class="arrow_down">
+                    <p><i class="fa-solid fa-arrow-down"></i>  Work</p>
+                </div>
+            </div>      
         </section>
-        <section class="work">  
-            <h2>My recent work</h2>
+        <section id="about" class="work">  
+            <h2 class="mobile_work_header">MY RECENT WORK</h2>
+            <h2 class="desktop_work_header">My recent work</h2>
             
-            <div class="work_element work_border">
+            <div id="border_top" class="work_element">
+                <img src="placeholder.png" alt="image placeholder">
+                <div class="supporting_text">
+                    <h3>Multi-Post Stories</h3>
+                    <p class="work_info">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                    </p>
+                    <ul class="languages">
+                        <li>css</li>
+                        <li>html</li>
+                        <li>Bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button" class="btn">See Project</button>
+                </div>
+            </div>
+
+            <div class="work_element work_element_reverse">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -112,25 +142,7 @@
                 </div>
             </div>
 
-            <div class="work_element">
-                <img src="placeholder.png" alt="image placeholder">
-                <div class="supporting_text">
-                    <h3>Multi-Post Stories</h3>
-                    <p class="work_info">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="languages">
-                        <li>css</li>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button type="button" class="btn">See Project</button>
-                </div>
-            </div>
-
-            <div class="work_element">
+            <div class="work_element work_element_reverse">
                 <img src="placeholder.png" alt="image placeholder">
                 <div class="supporting_text">
                     <h3>Multi-Post Stories</h3>
@@ -148,9 +160,10 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="contact">
             <div class="contact_us">
-                <h2>CONTACT US</h2>
+                <h2 class="mobile_work_header">CONTACT US</h2>
+                <h2 class="desktop_work_header">Let's chat!</h2>
                 <p class="work_info">
                     If you have an application you are interested in developing,
                     a feature that you need built or a project that needs coding. 
@@ -160,7 +173,7 @@
                     <input type="text" placeholder="Name" class="name" maxlength="30" name="Name" required>
                     <input type="email" placeholder="Enter your email" class="email" name="Email" required>
                     <textarea placeholder="Enter text here" class="customer_info" maxlength="500" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn">Send</button>
                 </form>
             </div>
             <div class="btn_links">
