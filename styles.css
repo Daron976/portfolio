@@ -29,6 +29,7 @@ a {
   justify-content: space-between;
   width: 100%;
   position: absolute;
+  animation: name_drop 1.5s ease-in-out both;
 }
 
 .links,
@@ -78,7 +79,6 @@ a {
 .home_link {
   font-size: 18px;
   font-weight: 500;
-  animation: bounce-in-top 1.3s ease-in-out both;
 }
 
 .logo {
@@ -92,7 +92,7 @@ a {
   font-size: 48px;
   line-height: 72px;
   color: #7d73fc;
-  animation: bounce-in-top 1.3s ease-in-out both;
+  animation: name_drop 1.5s ease-in-out both;
 }
 
 .occupation,
@@ -355,7 +355,6 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    animation: bounce-in-top 1.3s ease-in-out both;
   }
 
   .descriptive_paragraph {
@@ -484,55 +483,54 @@ input[type="email"]::-webkit-input-placeholder {
   }
 }
 
-@keyframes bounce-in-top {
+@keyframes name_drop {
   0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translateY(-500px);
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
     opacity: 0;
   }
+
   38% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
     opacity: 1;
   }
+
   55% {
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translateY(-65px);
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
   }
+
   72% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
+
   81% {
-    -webkit-transform: translateY(-28px);
-            transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translateY(-28px);
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
   }
+
   90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
+
   95% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translateY(-8px);
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
   }
+
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }
