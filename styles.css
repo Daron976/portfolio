@@ -166,7 +166,7 @@ img {
 }
 
 .work h2 {
-  max-width: 327px;
+  width: 327px;
   text-align: left;
   font-size: 40px;
   font-weight: 500;
