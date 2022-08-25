@@ -238,10 +238,14 @@ img {
   padding: 12px;
   height: 48px;
   gap: 10;
+  transition: all;
+  transition-duration: 1s;
 }
 
 .btn:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  border-radius: 5px;
+  color: #191765;
 }
 
 .btn:active {
