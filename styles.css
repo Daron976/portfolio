@@ -47,12 +47,13 @@ a {
   align-items: center;
   width: 100%;
   background:
-    url("circle.png") -230px 0 no-repeat,
-    url("circle.png") 450px 465px no-repeat;
+    url("circle.png") -135px 40px no-repeat,
+    url("circle.png") 300px 490px no-repeat;
+  background-size: 60%;
   text-align: center;
 }
 
-.mobile {
+.arrow_mobile {
   display: none;
 }
 
@@ -325,7 +326,8 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .fa-bars:before, .fa-navicon:before {
+  .fa-bars:before, 
+  .fa-navicon:before {
     content: "\f0c9";
     display: none;
   }
@@ -362,9 +364,9 @@ input[type="email"]::-webkit-input-placeholder {
   }
   
   .headline {
-    background:
-    url("circle.png") -75px 40px no-repeat,
-    url("circle.png") 1550px 455px no-repeat;
+    background: 
+    url("circle.png") no-repeat left 40px,
+    url("circle.png") no-repeat right 490px;
   }
 
   .ability {
