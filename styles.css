@@ -31,7 +31,7 @@ a {
   position: absolute;
 }
 
-.links, 
+.links,
 .desktop_work_header {
   display: none;
 }
@@ -90,7 +90,6 @@ a {
   font-weight: 700;
   font-size: 48px;
   line-height: 72px;
-  line-height: 72px;
   color: #7d73fc;
 }
 
@@ -136,7 +135,6 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 1rem;
-  font-size: 0.7rem;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -326,8 +324,8 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .fa-bars:before, 
-  .fa-navicon:before {
+  .fa-bars::before,
+  .fa-navicon::before {
     content: "\f0c9";
     display: none;
   }
@@ -336,19 +334,19 @@ input[type="email"]::-webkit-input-placeholder {
     display: flex;
     justify-content: space-around;
   }
-  
-  .fas, 
+
+  .fas,
   .mobile_work_header {
     display: none;
   }
-  
-  .links, 
+
+  .links,
   .arrow_mobile,
   .desktop_work_header {
     display: block;
   }
 
-  .portfolio_nav ul{
+  .portfolio_nav ul {
     display: flex;
     gap: 30px;
     font-style: normal;
@@ -362,11 +360,11 @@ input[type="email"]::-webkit-input-placeholder {
     max-width: 447px;
     height: 155px;
   }
-  
+
   .headline {
-    background: 
-    url("circle.png") no-repeat left 40px,
-    url("circle.png") no-repeat right 490px;
+    background:
+      url("circle.png") no-repeat left 40px,
+      url("circle.png") no-repeat right 490px;
   }
 
   .ability {
@@ -401,8 +399,9 @@ input[type="email"]::-webkit-input-placeholder {
     gap: 88px;
     margin-top: 250px;
     margin-bottom: 228px;
-    background:url(desktop_work_background_half_one.png) 0 200px no-repeat,
-    url(desktop_work_background_half_two.png) 1000px 760px no-repeat;
+    background:
+      url(desktop_work_background_half_one.png) 0 200px no-repeat,
+      url(desktop_work_background_half_two.png) 1000px 760px no-repeat;
   }
 
   .work_element {
@@ -439,6 +438,10 @@ input[type="email"]::-webkit-input-placeholder {
     height: 405px;
   }
 
+  form button {
+    width: 160px;
+  }
+
   .supporting_text button {
     float: left;
   }
@@ -451,13 +454,12 @@ input[type="email"]::-webkit-input-placeholder {
 
   .contact_us .work_info {
     max-width: 684px;
-    line-height: 24px;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 88px;
   }
 
-  input, 
+  input,
   .customer_info {
     width: 684px;
     height: 48px;
@@ -465,10 +467,6 @@ input[type="email"]::-webkit-input-placeholder {
 
   .customer_info {
     height: 136px;
-  }
-
-  form button {
-    width: 160px;
   }
 
   .contact_form {
