@@ -108,7 +108,7 @@ a {
   font-size: 20px;
   line-height: 28px;
   color: #c8c8d4;
-  width: 327px;
+  max-width: 327px;
   border-bottom: 1px solid #646369;
 }
 
@@ -119,7 +119,7 @@ a {
   flex-wrap: wrap;
   padding: 37px 44px;
   border-bottom: 1px solid #646369;
-  width: 327px;
+  max-width: 327px;
 }
 
 .ability_column h3 {
@@ -156,7 +156,7 @@ a {
 
 img {
   height: 236px;
-  width: 327px;
+  max-width: 327px;
 }
 
 .work h2,
@@ -167,7 +167,7 @@ img {
 }
 
 .work h2 {
-  width: 327px;
+  max-width: 327px;
   text-align: left;
   font-size: 40px;
   font-weight: 500;
@@ -189,7 +189,7 @@ img {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  width: 327px;
+  max-width: 327px;
   gap: 3.5rem;
 }
 
@@ -215,7 +215,7 @@ img {
 .work_info {
   margin-bottom: 1rem;
   margin-top: 3.5rem;
-  width: 327px;
+  max-width: 327px;
 }
 
 .work li {
@@ -284,7 +284,7 @@ img {
 
 .contact_us .work_info {
   text-align: center;
-  width: 327px;
+  max-width: 327px;
   margin: 24px 24px 40px 24px;
 }
 
@@ -325,7 +325,11 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  
+  .fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    display: none;
+  }
+
   .intro {
     display: flex;
     justify-content: space-around;
@@ -353,7 +357,7 @@ input[type="email"]::-webkit-input-placeholder {
 
   .descriptive_paragraph {
     line-height: 32px;
-    width: 447px;
+    max-width: 447px;
     height: 155px;
   }
   
@@ -364,7 +368,7 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   .ability {
-    width: 446px;
+    max-width: 446px;
     gap: 48px;
   }
 
@@ -379,7 +383,7 @@ input[type="email"]::-webkit-input-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    max-width: 200px;
     height: 40px;
     margin: 0;
   }
@@ -403,7 +407,7 @@ input[type="email"]::-webkit-input-placeholder {
     flex-direction: row;
     justify-content: center;
     gap: 24px;
-    width: 1156px;
+    max-width: 1156px;
   }
 
   .work_element_reverse {
@@ -411,12 +415,12 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   img {
-    width: 684px;
+    max-width: 684px;
     height: 448px;
   }
 
   .work_info {
-    width: 448px;
+    max-width: 448px;
     margin: 0;
     font-style: normal;
     font-size: 20px;
@@ -444,7 +448,7 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   .contact_us .work_info {
-    width: 684px;
+    max-width: 684px;
     line-height: 24px;
     font-size: 20px;
     line-height: 28px;
