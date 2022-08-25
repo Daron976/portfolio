@@ -29,6 +29,7 @@ a {
   justify-content: space-between;
   width: 100%;
   position: absolute;
+  animation: name_drop 1.5s ease-in-out both;
 }
 
 .links,
@@ -91,6 +92,7 @@ a {
   font-size: 48px;
   line-height: 72px;
   color: #7d73fc;
+  animation: name_drop 1.5s ease-in-out both;
 }
 
 .occupation,
@@ -482,5 +484,57 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: center;
     margin-top: 20px;
     gap: 10px;
+  }
+}
+
+@keyframes name_drop {
+  0% {
+    transform: translateY(-500px);
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-65px);
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    transform: translateY(-28px);
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    transform: translateY(-8px);
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }
