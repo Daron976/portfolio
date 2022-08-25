@@ -330,12 +330,6 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .fa-bars::before,
-  .fa-navicon::before {
-    content: "\f0c9";
-    display: none;
-  }
-
   .intro {
     display: flex;
     justify-content: space-around;
@@ -343,7 +337,7 @@ input[type="email"]::-webkit-input-placeholder {
 
   .fas,
   .mobile_work_header {
-    display: none;
+    display: none !important;
   }
 
   .links,
@@ -485,6 +479,11 @@ input[type="email"]::-webkit-input-placeholder {
     margin-top: 20px;
     gap: 10px;
   }
+}
+
+.btn {
+  transition: all;
+  transition-duration: 1s;
 }
 
 @keyframes name_drop {
