@@ -52,6 +52,10 @@ a {
     url("circle.png") 300px 490px no-repeat;
   background-size: 60%;
   text-align: center;
+  transition: background;
+  transition-duration: 0.8s;
+  transition-delay: 0.2s;
+  animation: sliding 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .arrow_mobile {
@@ -92,7 +96,6 @@ a {
   font-size: 48px;
   line-height: 72px;
   color: #7d73fc;
-  animation: name_drop 1.5s ease-in-out both;
 }
 
 .occupation,
@@ -101,6 +104,10 @@ a {
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
+}
+
+.occupation {
+  animation: sliding 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .descriptive_paragraph {
@@ -112,6 +119,7 @@ a {
   color: #c8c8d4;
   max-width: 327px;
   border-bottom: 1px solid #646369;
+  animation: sliding 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .ability {
@@ -122,6 +130,7 @@ a {
   padding: 37px 44px;
   border-bottom: 1px solid #646369;
   max-width: 327px;
+  animation: sliding 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .ability_column h3 {
@@ -158,6 +167,8 @@ a {
 img {
   height: 236px;
   max-width: 327px;
+  transition: all;
+  transition-duration: 1s;
 }
 
 .work h2,
@@ -537,3 +548,15 @@ input[type="email"]::-webkit-input-placeholder {
     animation-timing-function: ease-out;
   }
 }
+
+@keyframes sliding {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
