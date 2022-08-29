@@ -39,6 +39,9 @@
 - Select "Open with" / "Open with another application"
 - Choose any browser from the options that appear
 
+### Access
+- In order to access the wedsite online please copy and paste this link in your browser "https://daron976.github.io/Daron-WIafe-Software-Developer.github.io/"
+
 ## Author/s
 
 👤 **Author1**
