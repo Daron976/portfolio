@@ -1,4 +1,4 @@
-# Portfolio: Mobile Setup
+# Portfolio
 
 > This is the first two sections of a my portfolio website in a mobile browser
 
