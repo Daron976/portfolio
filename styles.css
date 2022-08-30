@@ -250,12 +250,11 @@ img {
 }
 
 .btn {
-  font-size: 0.85rem;
+  font-size: 20px;
   color: white;
   background-color: #9390ff;
   border: none;
   padding: 12px;
-  height: 48px;
   gap: 10;
   transition: all;
   transition-duration: 1s;
@@ -330,7 +329,6 @@ textarea {
 
 form button {
   width: 65px;
-  height: 24px;
 }
 
 .btn_links {
@@ -380,7 +378,6 @@ input[type="email"]::-webkit-input-placeholder {
   .descriptive_paragraph {
     line-height: 32px;
     max-width: 447px;
-    height: 155px;
   }
 
   .headline {
@@ -457,7 +454,6 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-    height: 405px;
   }
 
   form button {
