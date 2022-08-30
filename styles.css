@@ -33,7 +33,10 @@ a {
 }
 
 .links,
-.desktop_work_header {
+.desktop_work_header,
+.fa-envelope,
+.fa-angellist,
+.arrow_mobile {
   display: none;
 }
 
@@ -56,10 +59,6 @@ a {
   transition-duration: 0.8s;
   transition-delay: 0.2s;
   animation: sliding 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.arrow_mobile {
-  display: none;
 }
 
 .arrow_down {
@@ -346,9 +345,14 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: space-around;
   }
 
-  .fas,
-  .mobile_work_header {
+  .fa-bars,
+  .fa-envelope,
+  .fa-angellist {
     display: none !important;
+  }
+
+  .mobile_work_header {
+    display: none;
   }
 
   .links,
