@@ -19,7 +19,10 @@ ul {
 a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .intro {
@@ -55,10 +58,9 @@ a {
     url("images/circle.png") 300px 490px no-repeat;
   background-size: 60%;
   text-align: center;
-  transition: background;
+  transition: all;
   transition-duration: 0.8s;
   transition-delay: 0.2s;
-  animation: sliding 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .arrow_down {
@@ -95,6 +97,7 @@ a {
   font-size: 48px;
   line-height: 72px;
   color: #7d73fc;
+  animation: name_drop 1.5s ease-in-out both;
 }
 
 .occupation,
@@ -161,6 +164,10 @@ a {
 .arrow_down {
   margin-top: 58px;
   margin-bottom: 38px;
+}
+
+.headline_base {
+  animation: sliding 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 img {
