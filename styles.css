@@ -48,8 +48,8 @@ a {
   align-items: center;
   width: 100%;
   background:
-    url("circle.png") -135px 40px no-repeat,
-    url("circle.png") 300px 490px no-repeat;
+    url("images/circle.png") -135px 40px no-repeat,
+    url("images/circle.png") 300px 490px no-repeat;
   background-size: 60%;
   text-align: center;
   transition: background;
@@ -215,10 +215,10 @@ img {
   grid-template-columns: auto;
   place-content: center;
   background:
-    url("Ellipse_19.png") -145px 20px no-repeat,
-    url("Ellipse_20.png") 1610px 170px no-repeat,
-    url("Ellipse_22.png") 1484px 975px no-repeat,
-    url("Ellipse_21.png") -11px 1035px no-repeat;
+    url("images/Ellipse_19.png") -145px 20px no-repeat,
+    url("images/Ellipse_20.png") 1610px 170px no-repeat,
+    url("images/Ellipse_22.png") 1484px 975px no-repeat,
+    url("images/Ellipse_21.png") -11px 1035px no-repeat;
   width: 100%;
   gap: 2.5rem;
   justify-items: center;
@@ -374,8 +374,8 @@ input[type="email"]::-webkit-input-placeholder {
 
   .headline {
     background:
-      url("circle.png") no-repeat left 40px,
-      url("circle.png") no-repeat right 490px;
+      url("images/circle.png") no-repeat left 40px,
+      url("images/circle.png") no-repeat right 490px;
   }
 
   .ability {
@@ -411,8 +411,8 @@ input[type="email"]::-webkit-input-placeholder {
     margin-top: 250px;
     margin-bottom: 228px;
     background:
-      url(desktop_work_background_half_one.png) 0 200px no-repeat,
-      url(desktop_work_background_half_two.png) 1000px 760px no-repeat;
+      url(images/desktop_work_background_half_one.png) 0 200px no-repeat,
+      url(images/desktop_work_background_half_two.png) 1000px 760px no-repeat;
   }
 
   .work_element {
