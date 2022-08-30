@@ -68,6 +68,8 @@ Give a ⭐️ if you like this project!
     - GitHub: [@githubhandle](https://github.com/Samuellekpor)
 - Emre Karayaman
     - GitHub: [@githubhandle](https://github.com/karayamanemre)
+- John Adibe
+    - GitHub: [@githubhandle](https://github.com/Johnadibe)
 
 # 📝 License
 
