@@ -46,9 +46,9 @@
 
 👤 **Author1**
 
-- GitHub: [@githubhandle]https://github.com/Daron976
-- Twitter: [@twitterhandle]https://twitter.com/WiafeDaron
-- LinkedIn: [LinkedIn]https://www.linkedin.com/in/daron-wiafe-1b88141a6/
+- GitHub: [@githubhandle](https://github.com/Daron976)
+- Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daron-wiafe-1b88141a6/)
 
 ## 🤝 Contributing
 
@@ -64,7 +64,10 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to Microverse 
 - Inspiration
-- etc
+- Samuel lekpor 
+    - GitHub: [@githubhandle](https://github.com/Samuellekpor)
+- Emre Karayaman
+    - GitHub: [@githubhandle](https://github.com/karayamanemre)
 
 # 📝 License
 
