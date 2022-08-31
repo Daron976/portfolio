@@ -303,6 +303,10 @@ img {
   margin: 24px 24px 40px 24px;
 }
 
+label {
+  visibility: hidden;
+}
+
 input {
   width: 350px;
   height: 50px;
