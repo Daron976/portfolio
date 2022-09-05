@@ -384,10 +384,6 @@ textarea {
   height: 150px;
 }
 
-form button {
-  width: 65px;
-}
-
 .btn_links {
   display: flex;
   flex-direction: column;
