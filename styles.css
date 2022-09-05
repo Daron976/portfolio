@@ -30,6 +30,7 @@ a {
   position: fixed;
   background-color: #191765;
   animation: name_drop 1.5s ease-in-out both;
+  z-index: 2;
 }
 
 .mobile_menu {
@@ -42,7 +43,7 @@ a {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 4;
 }
 
 .position_btn {
@@ -215,6 +216,11 @@ a {
   display: flex;
   gap: 1rem;
   justify-content: center;
+}
+
+.fa-angellist:before {
+  display: none;
+  content: "\f209";
 }
 
 .headline .social_media_links,
