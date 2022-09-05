@@ -22,7 +22,7 @@ a {
 }
 
 .intro {
-  display: none;
+  display: flex;
   padding: 24px;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ a {
 }
 
 .mobile_menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #191765;
   background-image: url(images/shapes\ mobile\ menu.png);

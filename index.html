@@ -11,11 +11,11 @@
     <title>Daron Wiafe (Software Developer)</title>
 </head>
     <body>
-        <header class="intro">
+        <header id="header" class="intro">
             <a href="#" class="home_link">Daron Wiafe</a>
             <nav class="portfolio_nav mobile_nav">
                 <ul>
-                    <li><button type="button" class="menu_btn"><i class="fas fa-bars fa-2x"></i></button></li>
+                    <li><button id="menuButton" onclick="openMenu()" type="button" class="menu_btn"><i class="fas fa-bars fa-2x"></i></button></li>
                     <li class="links"><a href="#portfolio">Portfolio</a></li>
                     <li class="links"><a href="#about">About</a></li>
                     <li class="links"><a href="#contact">Contact</a></li>
@@ -23,9 +23,10 @@
                 </ul>
             </nav>
         </header>
-        <section class="mobile_menu">
+        <section id="menu" class="mobile_menu">
             <div class="position_btn">
-                <button type="button" class="mobile_menu_btn"><img src="images/Icon.png" alt="cancel icon"></button>
+                <button 
+                id="menuClose" onclick="closeMenu()" type="button" class="mobile_menu_btn"><img src="images/Icon.png" alt="cancel icon"></button>
             </div>
             <ul class="mobile_menu_list">
                 <li class="mobile_links"><a href="#portfolio"><strong>Portfolio</strong></a><img class="chevron" src="images/Union.png" alt="chevron"></li>
@@ -196,5 +197,6 @@
                     <p>baronjones976@gmail.com</p>
             </div>
         </section>
+        <script src="script.js"></script>
         </body>
     </html>
