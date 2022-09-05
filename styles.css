@@ -218,7 +218,7 @@ a {
   justify-content: center;
 }
 
-.fa-angellist:before {
+.fa-angellist::before {
   display: none;
   content: "\f209";
 }
