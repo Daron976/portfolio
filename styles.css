@@ -34,6 +34,7 @@ a {
 
 .mobile_menu {
   display: none;
+  position: fixed;
   flex-direction: column;
   background-color: #191765;
   background-image: url(images/shapes\ mobile\ menu.png);
