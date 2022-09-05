@@ -22,7 +22,7 @@ a {
 }
 
 .intro {
-  display: flex;
+  display: none;
   padding: 24px;
   align-items: center;
   justify-content: space-between;
@@ -30,6 +30,53 @@ a {
   position: fixed;
   background-color: #191765;
   animation: name_drop 1.5s ease-in-out both;
+}
+
+.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #191765;
+  background-image: url(images/shapes\ mobile\ menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.position_btn {
+  display: flex;
+  justify-content: end;
+  padding-top: 60px;
+  padding-right: 40px;
+}
+
+.mobile_menu_btn {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #191765;
+  width: fit-content;
+  border: none;
+  float: right;
+}
+
+.mobile_menu_list {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 40px;
+  gap: 45px;
+}
+
+.mobile_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevron {
+  height: 12px;
 }
 
 .links,
@@ -178,7 +225,7 @@ a {
   animation: sliding 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-img {
+.card {
   height: 236px;
   max-width: 327px;
   transition: all;
@@ -456,7 +503,7 @@ input[type="email"]::-webkit-input-placeholder {
     flex-direction: row-reverse;
   }
 
-  img {
+  .card {
     max-width: 684px;
     height: 448px;
   }
