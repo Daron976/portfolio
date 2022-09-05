@@ -196,8 +196,8 @@ a {
 .ability_column h3 {
   margin-bottom: 1rem;
   color: #7d73fc;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 25px;
   line-height: 24px;
   text-align: start;
 }
@@ -283,11 +283,7 @@ a {
   display: grid;
   grid-template-columns: auto;
   place-content: center;
-  background:
-    url("images/Ellipse_19.png") -145px 20px no-repeat,
-    url("images/Ellipse_20.png") 1610px 170px no-repeat,
-    url("images/Ellipse_22.png") 1484px 975px no-repeat,
-    url("images/Ellipse_21.png") -11px 1035px no-repeat;
+  background: url("images/Ellipse_19.png") -145px 20px no-repeat, url("images/Ellipse_20.png") 1610px 170px no-repeat, url("images/Ellipse_22.png") 1484px 975px no-repeat, url("images/Ellipse_21.png") -11px 1035px no-repeat;
   width: 100%;
   gap: 2.5rem;
   justify-items: center;
@@ -313,13 +309,12 @@ a {
 }
 
 .btn {
-  font-size: 0.85rem;
+  font-size: 25px;
+  font-weight: 700;
   color: white;
   background-color: #9390ff;
   border: none;
   padding: 12px;
-  height: 48px;
-  gap: 10;
   transition: all;
   transition-duration: 0.5s;
 }
@@ -367,6 +362,10 @@ a {
   margin: 24px 24px 40px 24px;
 }
 
+label {
+  visibility: hidden;
+}
+
 input {
   width: 350px;
   height: 50px;
@@ -387,7 +386,6 @@ textarea {
 
 form button {
   width: 65px;
-  height: 24px;
 }
 
 .btn_links {
@@ -454,18 +452,15 @@ input[type="email"]::-webkit-input-placeholder {
   .descriptive_paragraph {
     line-height: 32px;
     max-width: 447px;
-    height: 155px;
   }
 
   .headline {
-    background:
-      url("images/circle.png") no-repeat left 40px,
-      url("images/circle.png") no-repeat right 490px;
+    background: url("images/circle.png") no-repeat left 40px, url("images/circle.png") no-repeat right 490px;
   }
 
   .ability {
     max-width: 446px;
-    gap: 48px;
+    gap: 13px;
   }
 
   .ability_list ul {
@@ -495,9 +490,7 @@ input[type="email"]::-webkit-input-placeholder {
     gap: 88px;
     margin-top: 250px;
     margin-bottom: 228px;
-    background:
-      url(images/desktop_work_background_half_one.png) 0 200px no-repeat,
-      url(images/desktop_work_background_half_two.png) 1000px 760px no-repeat;
+    background: url(images/desktop_work_background_half_one.png) 0 200px no-repeat, url(images/desktop_work_background_half_two.png) 1000px 760px no-repeat;
   }
 
   .work_element {
@@ -531,7 +524,6 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-    height: 405px;
   }
 
   .btn:hover {
