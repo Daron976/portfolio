@@ -27,7 +27,8 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  background-color: #191765;
   animation: name_drop 1.5s ease-in-out both;
 }
 
@@ -265,7 +266,7 @@ img {
   height: 48px;
   gap: 10;
   transition: all;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .btn:active {
@@ -349,7 +350,6 @@ input[type="email"]::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .intro {
-    display: flex;
     justify-content: space-around;
   }
 
