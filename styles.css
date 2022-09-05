@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 .intro {
   display: flex;
   padding: 24px;
@@ -48,6 +44,15 @@ a:hover {
   color: white;
 }
 
+.menu_btn {
+  background: none;
+  border: none;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -55,7 +60,7 @@ a:hover {
   width: 100%;
   background:
     url("images/circle.png") -135px 40px no-repeat,
-    url("images/circle.png") 300px 490px no-repeat;
+    url("images/circle.png") 420px 490px no-repeat;
   background-size: 60%;
   text-align: center;
   transition: all;
@@ -84,6 +89,8 @@ a:hover {
 .home_link {
   font-size: 18px;
   font-weight: 500;
+  transition: all;
+  transition-duration: 0.2s;
 }
 
 .logo {
@@ -261,12 +268,6 @@ img {
   transition-duration: 1s;
 }
 
-.btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  border-radius: 5px;
-  color: #191765;
-}
-
 .btn:active {
   background-color: #5e42d7;
 }
@@ -358,6 +359,16 @@ input[type="email"]::-webkit-input-placeholder {
     display: none !important;
   }
 
+  .fa-brands {
+    transition: all;
+    transition-duration: 0.2s;
+  }
+
+  .fa-brands:hover {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
   .mobile_work_header {
     display: none;
   }
@@ -366,6 +377,8 @@ input[type="email"]::-webkit-input-placeholder {
   .arrow_mobile,
   .desktop_work_header {
     display: block;
+    transition: all;
+    transition-duration: 0.2s;
   }
 
   .portfolio_nav ul {
@@ -375,6 +388,12 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .links:hover,
+  .home_link:hover {
+    cursor: pointer;
+    font-size: 25px;
   }
 
   .descriptive_paragraph {
@@ -458,6 +477,14 @@ input[type="email"]::-webkit-input-placeholder {
     align-items: flex-start;
     gap: 24px;
     height: 405px;
+  }
+
+  .btn:hover {
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+    border-radius: 5px;
+    color: #191765;
+    padding: 15px;
+    cursor: pointer;
   }
 
   form button {
