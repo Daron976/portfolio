@@ -21,18 +21,65 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 .intro {
   display: flex;
   padding: 24px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  background-color: #191765;
   animation: name_drop 1.5s ease-in-out both;
+  z-index: 2;
+}
+
+.mobile_menu {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  background-color: #191765;
+  background-image: url(images/shapes\ mobile\ menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+}
+
+.position_btn {
+  display: flex;
+  justify-content: end;
+  padding-top: 60px;
+  padding-right: 40px;
+}
+
+.mobile_menu_btn {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #191765;
+  width: fit-content;
+  border: none;
+  float: right;
+}
+
+.mobile_menu_list {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 40px;
+  gap: 45px;
+}
+
+.mobile_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevron {
+  height: 12px;
 }
 
 .links,
@@ -48,12 +95,23 @@ a:hover {
   color: white;
 }
 
+.menu_btn {
+  background: none;
+  border: none;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: url("images/circle.png") -135px 40px no-repeat, url("images/circle.png") 300px 490px no-repeat;
+  background:
+    url("images/circle.png") -135px 40px no-repeat,
+    url("images/circle.png") 420px 490px no-repeat;
   background-size: 60%;
   text-align: center;
   transition: all;
@@ -82,6 +140,8 @@ a:hover {
 .home_link {
   font-size: 18px;
   font-weight: 500;
+  transition: all;
+  transition-duration: 0.2s;
 }
 
 .logo {
@@ -158,6 +218,11 @@ a:hover {
   justify-content: center;
 }
 
+.fa-angellist::before {
+  display: none;
+  content: "\f209";
+}
+
 .headline .social_media_links,
 .arrow_down {
   margin-top: 58px;
@@ -168,7 +233,7 @@ a:hover {
   animation: sliding 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-img {
+.card {
   height: 236px;
   max-width: 327px;
   transition: all;
@@ -251,13 +316,7 @@ img {
   border: none;
   padding: 12px;
   transition: all;
-  transition-duration: 1s;
-}
-
-.btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  border-radius: 5px;
-  color: #191765;
+  transition-duration: 0.5s;
 }
 
 .btn:active {
@@ -325,10 +384,6 @@ textarea {
   height: 150px;
 }
 
-form button {
-  width: 65px;
-}
-
 .btn_links {
   display: flex;
   flex-direction: column;
@@ -344,7 +399,6 @@ input[type="email"]::-webkit-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .intro {
-    display: flex;
     justify-content: space-around;
   }
 
@@ -352,6 +406,16 @@ input[type="email"]::-webkit-input-placeholder {
   .fa-envelope,
   .fa-angellist {
     display: none !important;
+  }
+
+  .fa-brands {
+    transition: all;
+    transition-duration: 0.2s;
+  }
+
+  .fa-brands:hover {
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .mobile_work_header {
@@ -362,6 +426,8 @@ input[type="email"]::-webkit-input-placeholder {
   .arrow_mobile,
   .desktop_work_header {
     display: block;
+    transition: all;
+    transition-duration: 0.2s;
   }
 
   .portfolio_nav ul {
@@ -371,6 +437,12 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .links:hover,
+  .home_link:hover {
+    cursor: pointer;
+    font-size: 25px;
   }
 
   .descriptive_paragraph {
@@ -428,7 +500,7 @@ input[type="email"]::-webkit-input-placeholder {
     flex-direction: row-reverse;
   }
 
-  img {
+  .card {
     max-width: 684px;
     height: 448px;
   }
@@ -448,6 +520,14 @@ input[type="email"]::-webkit-input-placeholder {
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
+  }
+
+  .btn:hover {
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+    border-radius: 5px;
+    color: #191765;
+    padding: 15px;
+    cursor: pointer;
   }
 
   form button {
