@@ -44,7 +44,7 @@
 
 ## Author/s
 
-👤 **Author1**
+👤 **Daron Wiafe**
 
 - GitHub: [@githubhandle](https://github.com/Daron976)
 - Twitter: [@twitterhandle](https://twitter.com/WiafeDaron)
