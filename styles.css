@@ -223,8 +223,8 @@ a {
 
 .popUpContainer {
   background: rgba(255, 255, 255, 0.16);
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,7 +356,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   max-width: 327px;
   gap: 3.5rem;
 }
@@ -558,7 +558,6 @@ input[type="email"]::-webkit-input-placeholder {
     align-content: center;
     justify-content: center;
     background: url("images/circle.png") no-repeat 160px 70px, url("images/circle.png") no-repeat 1300px 380px, linear-gradient(#191765, #191765);
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -567,9 +566,9 @@ input[type="email"]::-webkit-input-placeholder {
 
   .backGroundColor {
     display: none;
-    position: fixed; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -606,7 +605,7 @@ input[type="email"]::-webkit-input-placeholder {
 
   .headerWithCancel {
     width: -webkit-fill-available;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
   }
 
   .popUpImage {
@@ -657,14 +656,14 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   .work_element {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     gap: 24px;
     max-width: 1156px;
   }
 
   .work_element_reverse {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .card {
