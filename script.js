@@ -21,7 +21,7 @@ for (let i = 0; i < 3; i += 1) {
   mobileLinks[i].setAttribute('onclick', 'closeMenu()');
 }
 
-const popUpContent =
+const popUpContent = [
   {
     name: 'Multi-post story',
     descriptionMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
@@ -30,10 +30,16 @@ const popUpContent =
     technologiesItems: ['html','Ruby on rails', 'css', 'Github'],
     liveProject: 'https://daron976.github.io/portfolio/',
     projectSource: 'https://github.com/Daron976/portfolio'
-  }
+  },
+
+  // work section content
+
+];
 
 
-// this is the pop up window
+// work section html
+
+// pop up window html
 
 const body = document.querySelector('body');
 const popUpDiv = document.createElement('div');
@@ -44,7 +50,7 @@ const headerAndCancelButton = document.createElement('div');
 headerAndCancelButton.classList.add('headerWithCancel');
 const h2 = document.createElement('h2');
 h2.setAttribute('id', 'popUpHeader');
-h2.textContent = popUpContent.name;
+h2.textContent = popUpContent[0].name;
 const popUpCancelBtn = document.createElement('button');
 popUpCancelBtn.setAttribute('type', 'button')
 const popUpCancel = document.createElement('img');
@@ -64,18 +70,18 @@ const popUpInfo = document.createElement('div');
 popUpInfo.classList.add('popUpInfo');
 const paraDesktop = document.createElement('p');
 paraDesktop.classList.add('popUpDescription');
-paraDesktop.textContent = popUpContent.descriptionDesktop;
+paraDesktop.textContent = popUpContent[0].descriptionDesktop;
 popUpInfo.appendChild(paraDesktop);
 const paraMobile = document.createElement('p');
 paraMobile.classList.add('popUpDescriptionMobile');
-paraMobile.textContent = popUpContent.descriptionMobile;
+paraMobile.textContent = popUpContent[0].descriptionMobile;
 popUpInfo.appendChild(paraMobile);
 const uList = document.createElement('ul')
 uList.classList.add('technologies');
-for (let i = 0; i < popUpContent.technologiesItems.length; i++) {
+for (let i = 0; i < popUpContent[0].technologiesItems.length; i++) {
   let uListItems = document.createElement('li');
   uListItems.classList.add('technologiesList');
-  uListItems.textContent = popUpContent.technologiesItems[i];
+  uListItems.textContent = popUpContent[0].technologiesItems[i];
   uList.appendChild(uListItems);
 }
 uList.firstChild.classList.add('leftBorder');
@@ -84,7 +90,7 @@ popUpInfo.appendChild(uList);
 const desktopPopUpBtn = document.createElement('div')
 desktopPopUpBtn.classList.add('desktopPopUpBtn');
 const liveAnchor = document.createElement('a');
-liveAnchor.setAttribute('href', popUpContent.liveProject);
+liveAnchor.setAttribute('href', popUpContent[0].liveProject);
 const liveProjectBtn = document.createElement('button');
 liveProjectBtn.classList.add('btn', 'liveProject');
 liveProjectBtn.setAttribute('type', 'button');
@@ -95,7 +101,7 @@ liveProjectBtn.appendChild(liveIcon);
 liveAnchor.appendChild(liveProjectBtn);
 desktopPopUpBtn.appendChild(liveAnchor);
 const sourceAnchor = document.createElement('a');
-sourceAnchor.setAttribute('href', popUpContent.projectSource);
+sourceAnchor.setAttribute('href', popUpContent[0].projectSource);
 const projectSourceBtn = document.createElement('button');
 projectSourceBtn.classList.add('btn', 'projectSource');
 projectSourceBtn.setAttribute('type', 'button');
