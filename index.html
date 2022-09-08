@@ -163,14 +163,15 @@
                     a feature that you need built or a project that needs coding. 
                     I'd love to help with it 
                 </p>
-                <form action="https://formspree.io/f/mwkzplvb" name="contact_form" class="contact_form" method="post">
+                <form action="https://formspree.io/f/mwkzplvb" name="contact_form" id="form_submission" class="contact_form" method="post">
                     <label for="name"></label>
                     <input id="name" type="text" placeholder="Name" class="name" maxlength="30" name="Name" required>
                     <label for="email"></label>
                     <input id="email" type="email" placeholder="Enter your email" class="email" name="Email" required>
+                    <span id="error" class="error_text">Please ensure that the charaters are lowercase characters</span>
                     <label for="customer_information"></label>
                     <textarea id="customer_information" placeholder="Enter text here" class="customer_info" maxlength="500" required></textarea>
-                    <button type="submit" class="btn">Send</button>
+                    <button type="submit" class="btn submitBtn">Send</button>
                 </form>
             </div>
             <div class="btn_links">
