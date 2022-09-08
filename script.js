@@ -31,7 +31,7 @@ const popUpContent = [
     name: 'Multi-post story',
     descriptionMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     descriptionDesktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    featuredImageDesktop: 'images/Snapshoot-Portfolio.png',
+    featuredImage: 'images/Snapshoot-Portfolio.png',
     technologiesItems: ['html', 'Ruby on rails', 'css', 'Github'],
     liveProject: 'https://daron976.github.io/portfolio/',
     projectSource: 'https://github.com/Daron976/portfolio',
@@ -102,7 +102,7 @@ headerAndCancelButton.appendChild(h2);
 containerDiv.appendChild(headerAndCancelButton);
 const popUpImage = document.createElement('img');
 popUpImage.classList.add('popUpImage');
-popUpImage.setAttribute('src', 'images/Snapshoot-Portfolio.png');
+popUpImage.setAttribute('src', popUpContent[0].featuredImage);
 popUpImage.setAttribute('alt', 'Project display');
 containerDiv.appendChild(popUpImage);
 const popUpInfo = document.createElement('div');

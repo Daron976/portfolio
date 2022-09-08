@@ -218,7 +218,6 @@ a {
   top: 0;
   bottom: 0;
   display: none;
-  align-items: center;
 }
 
 .popUpContainer {
@@ -228,8 +227,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   gap: 15px;
-  margin: 1px 24px;
+  margin: 1.5rem;
 }
 
 .popUpWindow .mobile_menu_btn {
@@ -245,7 +245,7 @@ a {
 
 .popUpDescriptionMobile {
   text-align: center;
-  padding: 0 24px;
+  padding: 0 3rem;
 }
 
 .popUpDescription {
@@ -253,18 +253,18 @@ a {
 }
 
 .headerWithCancel {
-  width: -webkit-fill-available;
-  padding: 1.5rem 2rem;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .popUpImage {
-  width: 80%;
+  width: 90%;
 }
 
 .popUpInfo {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .technologies {
@@ -289,13 +289,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.liveProject,
-.projectSource {
-  font-size: 20px !important;
 }
 
 .social_media_links,
@@ -416,6 +411,18 @@ a {
 
 .btn:enabled {
   background-color: #7d73fc;
+}
+
+.liveProject,
+.projectSource {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.liveProject {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .contact_us {
@@ -582,10 +589,11 @@ input[type="email"]::-webkit-input-placeholder {
   .popUpContainer {
     position: fixed;
     top: 0;
-    bottom: 5px;
+    bottom: 0;
     display: flex;
-    margin: 5px 340px 0;
-    padding: 24px 24px 90px;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin: 0.1rem;
   }
 
   .popUpInfo {
@@ -604,7 +612,10 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   .headerWithCancel {
-    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 3rem;
   }
 
