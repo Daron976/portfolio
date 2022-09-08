@@ -43,7 +43,7 @@ a {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  z-index: 4;
+  z-index: 2;
 }
 
 .position_btn {
@@ -211,6 +211,88 @@ a {
   line-height: 24px;
 }
 
+.popUpWindow {
+  background: #191765;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+
+.popUpContainer {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 1.5rem;
+}
+
+.popUpWindow .mobile_menu_btn {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.popUpheader {
+  width: 226px;
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 1rem;
+}
+
+.popUpDescriptionMobile {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.popUpDescription {
+  display: none;
+}
+
+.headerWithCancel {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.popUpImage {
+  width: 90%;
+}
+
+.popUpInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+}
+
+.technologiesList {
+  padding: 0.5rem 1rem;
+  border-right: 1px solid #81818c;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.leftBorder {
+  border-left: 1px solid #81818c;
+}
+
+.desktopPopUpBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .social_media_links,
 .work ul {
   display: flex;
@@ -269,7 +351,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   max-width: 327px;
   gap: 3.5rem;
 }
@@ -329,6 +411,18 @@ a {
 
 .btn:enabled {
   background-color: #7d73fc;
+}
+
+.liveProject,
+.projectSource {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.liveProject {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .contact_us {
@@ -465,6 +559,89 @@ input[type="email"]::-webkit-input-placeholder {
     gap: 4.78px;
   }
 
+  .popUpWindow {
+    display: none;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    background: url("images/circle.png") no-repeat 160px 70px, url("images/circle.png") no-repeat 1300px 380px, linear-gradient(#191765, #191765);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .backGroundColor {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a2a3ae;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .popUpContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin: 0.1rem;
+  }
+
+  .popUpInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  #popUpHeader {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    width: auto;
+    color: white;
+  }
+
+  .headerWithCancel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+  }
+
+  .popUpImage {
+    width: 90%;
+  }
+
+  .popUpDescription {
+    display: block;
+    text-align: center;
+    max-width: 686px;
+  }
+
+  .popUpDescriptionMobile {
+    display: none;
+  }
+
+  .displayNone {
+    display: block !important;
+  }
+
+  .desktopPopUpBtn {
+    flex-direction: row;
+    gap: 78px;
+  }
+
   .headline .social_media_links,
   .arrow_down {
     display: flex;
@@ -490,14 +667,14 @@ input[type="email"]::-webkit-input-placeholder {
   }
 
   .work_element {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     gap: 24px;
     max-width: 1156px;
   }
 
   .work_element_reverse {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .card {
