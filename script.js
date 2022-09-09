@@ -226,3 +226,27 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// js Storage
+
+const formName = document.getElementById('name');
+const formText = document.getElementById('customer_information');
+
+function autoFill() {
+  const storageObj = {
+    name: localStorage.setItem('customerName', formName.value),
+    email: localStorage.setItem('customerEmail', email.value),
+    customerInfo: localStorage.setItem('customerInfo', formText.value),
+  };
+  return storageObj;
+}
+
+formName.value = localStorage.getItem('customerName');
+email.value = localStorage.getItem('customerEmail');
+formText.value = localStorage.getItem('customerInfo');
+
+autoFill();
+
+formName.onchange = autoFill;
+email.onchange = autoFill;
+formText.onchange = autoFill;
