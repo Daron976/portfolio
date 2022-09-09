@@ -215,3 +215,14 @@ workBtn[2].addEventListener('click', information);
 workBtn[3].addEventListener('click', information);
 
 popUpCancelBtn.addEventListener('click', closePopUpWindow);
+
+const form = document.getElementById('form_submission');
+const email = document.getElementById('email');
+const errorText = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  if (email.value !== String(email.value).toLowerCase()) {
+    errorText.style.display = 'flex';
+    e.preventDefault();
+  }
+});
