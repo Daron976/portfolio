@@ -234,13 +234,25 @@ const formText = document.getElementById('customer_information');
 
 function autoFill() {
   let storageObj = {
-    name: localStorage.setItem('customerName',formName.value),
-    email: localStorage.setItem('customerEmail',email.value),
+    name: localStorage.setItem('customerName', formName.value),
+    email: localStorage.setItem('customerEmail', email.value),
     customerInfo: localStorage.setItem('customerInfo', formText.value),
   }
 }
 
+function retriever() {
+  let localStorageName = localStorage.getItem('customerName');
+  let localStarageEmail = localStorage.getItem('customerEmail');
+  let localStarageCustomerInfo = localStorage.getItem('customerInfo');
+  console.log(localStarageCustomerInfo)
+  formName.value = localStorageName;
+  email.value = localStarageEmail;
+  formText.value = localStarageCustomerInfo;
+  return localStarageArray = [formName.value, email.value, formText.value];
+}
 autoFill();
+
+retriever();
 
 formName.onchange = autoFill;
 email.onchange = autoFill;
