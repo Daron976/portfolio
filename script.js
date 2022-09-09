@@ -226,3 +226,22 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+// js Storage
+
+const formName = document.getElementById('name');
+const formText = document.getElementById('customer_information');
+
+function autoFill() {
+  let storageObj = {
+    name: localStorage.setItem('customerName',formName.value),
+    email: localStorage.setItem('customerEmail',email.value),
+    customerInfo: localStorage.setItem('customerInfo', formText.value),
+  }
+}
+
+autoFill();
+
+formName.onchange = autoFill;
+email.onchange = autoFill;
+formText.onchange = autoFill;
