@@ -468,6 +468,16 @@ input {
   margin: 0 24px 24px 24px;
 }
 
+.error_text {
+  display: none;
+  width: 100%;
+  justify-content: flex-start;
+  margin: -25px 0 10px 48px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 textarea {
   padding: 12px;
   margin: 0 24px 40px 24px;
