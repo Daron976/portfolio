@@ -1,10 +1,11 @@
 # Portfolio
 
-> This is the first two sections of a my portfolio website in a mobile browser
+> This is my portfolio page that details who I am and what I do, it contains various projects I have built and engaged with. The purpose of this website is to demonstrate my abilities to prospective employers.
 
 ## Built With
 
 - Html & CSS
+- JavaScript
 - Visual studio
 
 ## Getting Started
