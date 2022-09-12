@@ -227,7 +227,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 15px;
   margin: 1.5rem;
 }
@@ -499,6 +499,13 @@ textarea {
 
 input[type="email"]::-webkit-input-placeholder {
   color: #191765;
+}
+
+@media screen and (max-width: 375px) {
+  .popUpContainer {
+    justify-content: space-between;
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (min-width: 768px) {
