@@ -28,24 +28,18 @@ for (let i = 0; i < 3; i += 1) {
 
 const workSection = {
   mobileTitle: 'MY RECENT WORK',
-  desktopTitle: 'My recent work',
-  subTitle: 'Multi-Post Stories',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'images/placeholder.png',
-  featuredImageAltText: 'placeholder for pending images',
-  technologiesItems: ['css', 'html', 'Bootstrap', 'Ruby'],
-  buttonText: 'See Project',
+  desktopTitle: 'My recent work'
 };
 
 const popUpContent = [
   {
-    name: 'Multi-post story project',
-    descriptionMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    descriptionDesktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    featuredImage: 'images/Snapshoot-Portfolio.png',
-    technologiesItems: ['html', 'Ruby on rails', 'css', 'Github'],
-    liveProject: 'https://daron976.github.io/portfolio/',
-    projectSource: 'https://github.com/Daron976/portfolio',
+    name: 'To Do List Application',
+    descriptionMobile: 'In this project, I build a to do list minimalist websites that allows users to create and modify a to do list.',
+    descriptionDesktop: 'In this project, I build a to do list minimalist websites that allows users to create and modify a to do list.',
+    featuredImage: 'images/to-do-list-project.png',
+    technologiesItems: ['HTML', 'JavaScript', 'CSS', 'Webpack'],
+    liveProject: 'https://daron976.github.io/To-Do-List/dist/',
+    projectSource: 'https://github.com/Daron976/To-Do-List',
   },
   {
     name: 'Multi-post story project',
@@ -86,22 +80,11 @@ const supportingTextHeader = document.querySelectorAll('.supporting_text > h3');
 const workInfo = document.querySelectorAll('.work_info');
 const workBtn = document.querySelectorAll('.supporting_text > button');
 
-for (let i = 0; i < 4; i += 1) {
-  const workImg = document.createElement('img');
-  workImg.setAttribute('src', workSection.featuredImage);
-  workImg.setAttribute('alt', workSection.featuredImageAltText);
-  workImg.classList.add('card');
-  workElement[i].appendChild(workImg);
-  supportingTextHeader[i].textContent = workSection.subTitle;
-  workInfo[i].textContent = workSection.description;
-  workBtn[i].textContent = workSection.buttonText;
-}
-
 const projectOne = document.querySelectorAll('.projectOne > li');
 const projectTwo = document.querySelectorAll('.projectTwo > li');
 const projectThree = document.querySelectorAll('.projectThree > li');
 const projectFour = document.querySelectorAll('.projectFour > li');
-for (let i = 0; i < 4; i += 1) {
+for (let i = 0; i < 3; i += 1) {
   projectOne[i].textContent = workSection.technologiesItems[i];
   projectTwo[i].textContent = workSection.technologiesItems[i];
   projectThree[i].textContent = workSection.technologiesItems[i];
