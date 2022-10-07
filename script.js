@@ -28,7 +28,7 @@ for (let i = 0; i < 3; i += 1) {
 
 const workSection = {
   mobileTitle: 'MY RECENT WORK',
-  desktopTitle: 'My recent work'
+  desktopTitle: 'My recent work',
 };
 
 const popUpContent = [
@@ -75,9 +75,6 @@ mobileWorkHeader.textContent = workSection.mobileTitle;
 const desktopWorkHeader = document.querySelectorAll('.desktop_work_header');
 desktopWorkHeader.textContent = workSection.desktopTitle;
 
-const workElement = document.querySelectorAll('.work_element');
-const supportingTextHeader = document.querySelectorAll('.supporting_text > h3');
-const workInfo = document.querySelectorAll('.work_info');
 const workBtn = document.querySelectorAll('.supporting_text > button');
 
 const projectOne = document.querySelectorAll('.projectOne > li');
