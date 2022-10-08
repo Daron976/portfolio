@@ -76,12 +76,7 @@ const desktopWorkHeader = document.querySelectorAll('.desktop_work_header');
 desktopWorkHeader.textContent = workSection.desktopTitle;
 
 const Btn = document.querySelector('#to-do-btn');
-Btn.addEventListener('click', information)
 
-const projectOne = document.querySelectorAll('.projectOne > li');
-const projectTwo = document.querySelectorAll('.projectTwo > li');
-const projectThree = document.querySelectorAll('.projectThree > li');
-const projectFour = document.querySelectorAll('.projectFour > li');
 const body = document.querySelector('body');
 const popUpDiv = document.createElement('div');
 const containerDiv = document.createElement('div');
@@ -176,6 +171,8 @@ function information(e) {
 
   openPopUpWindow();
 }
+
+Btn.addEventListener('click', information);
 
 function closePopUpWindow() {
   popUpDiv.style.display = 'none';
