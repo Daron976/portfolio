@@ -75,19 +75,13 @@ mobileWorkHeader.textContent = workSection.mobileTitle;
 const desktopWorkHeader = document.querySelectorAll('.desktop_work_header');
 desktopWorkHeader.textContent = workSection.desktopTitle;
 
-const workBtn = document.querySelectorAll('.supporting_text > button');
+const Btn = document.querySelector('#to-do-btn');
+Btn.addEventListener('click', information)
 
 const projectOne = document.querySelectorAll('.projectOne > li');
 const projectTwo = document.querySelectorAll('.projectTwo > li');
 const projectThree = document.querySelectorAll('.projectThree > li');
 const projectFour = document.querySelectorAll('.projectFour > li');
-for (let i = 0; i < 3; i += 1) {
-  projectOne[i].textContent = workSection.technologiesItems[i];
-  projectTwo[i].textContent = workSection.technologiesItems[i];
-  projectThree[i].textContent = workSection.technologiesItems[i];
-  projectFour[i].textContent = workSection.technologiesItems[i];
-}
-
 const body = document.querySelector('body');
 const popUpDiv = document.createElement('div');
 const containerDiv = document.createElement('div');
@@ -188,11 +182,6 @@ function closePopUpWindow() {
   header.style.display = 'flex';
   backGroundDiv.style.display = 'none';
 }
-
-workBtn[0].addEventListener('click', information);
-workBtn[1].addEventListener('click', information);
-workBtn[2].addEventListener('click', information);
-workBtn[3].addEventListener('click', information);
 
 popUpCancelBtn.addEventListener('click', closePopUpWindow);
 
