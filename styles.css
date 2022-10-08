@@ -610,7 +610,6 @@ input[type="email"]::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     padding: 1.5rem 0;
-    margin: 0.1rem;
   }
 
   .popUpInfo {
@@ -643,7 +642,7 @@ input[type="email"]::-webkit-input-placeholder {
   .popUpDescription {
     display: block;
     text-align: center;
-    max-width: 686px;
+    max-width: 600px;
   }
 
   .popUpDescriptionMobile {
