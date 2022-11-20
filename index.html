@@ -7,6 +7,11 @@
     <script src="https://kit.fontawesome.com/8f283d01ad.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Daron Wiafe Software Developer Portfolio</title>
 </head>
@@ -25,12 +30,12 @@
         </header>
         <div id="menu" class="mobile_menu">
             <div class="position_btn">
-                <button id="cancelButton" type="button" class="mobile_menu_btn"><img src="images/Icon.png" alt="cancel icon"></button>
+                <button id="cancelButton" type="button" class="mobile_menu_btn"><i class="fa-sharp fa-solid fa-xmark fa-2x"></i></button>
             </div>
             <ul class="mobile_menu_list">
-                <li class="mobile_links"><a href="#portfolio"><strong>Portfolio</strong></a><img class="chevron" src="images/Union.png" alt="chevron"></li>
-                <li class="mobile_links"><a href="#about"><strong>About</strong></a><img class="chevron" src="images/Union.png" alt="chevron"></li>
-                <li class="mobile_links"><a href="#contact"><strong>Contact</strong></a><img class="chevron" src="images/Union.png" alt="chevron"></li>
+                <li class="mobile_links"><a href="#portfolio"><strong>Portfolio</strong></a><span class="material-symbols-outlined chevron">chevron_right</span></li>
+                <li class="mobile_links"><a href="#about"><strong>About</strong></a><span class="material-symbols-outlined chevron">chevron_right</span></li>
+                <li class="mobile_links"><a href="#contact"><strong>Contact</strong></a><span class="material-symbols-outlined chevron">chevron_right</span></li>
             </ul>
         </div>
         <section id="portfolio" class="headline">
@@ -47,12 +52,13 @@
             <div class="ability">
 
                 <div class="ability_column">
-                    <h3 class="ability_header">Languages</h3>
+                    <h3 class="ability_header">Front-End</h3>
                     <ul class="ability_list">
                         <li>Javascript</li>
-                        <li>Ruby</li>
-                        <li>Html</li>
-                        <li>Css</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
     
@@ -61,19 +67,26 @@
                     <ul class="ability_list">
                         <li>Bootstrap</li>
                         <li>Ruby on Rails</li>
-                        <li>RSpec</li>
-                        <li>CapyBara</li>
-                        <li>Selenium</li>
+                    </ul>
+                </div>
+
+                <div class="ability_column">
+                    <h3 class="ability_header">Back-End</h3>
+                    <ul class="ability_list">
+                        <li>Ruby</li>
+                        <li>Rails</li>
+                        <li>MySQL</li>
                     </ul>
                 </div>
     
                 <div class="ability_column">
-                    <h3 class="ability_header">Skills</h3>
+                    <h3 class="ability_header">Tools & Methods</h3>
                     <ul class="ability_list">
-                        <li>Codekit</li>
+                        <li>Git</li>
+                        <li>Git-flow</li>
                         <li>Github</li>
-                        <li>Codepen</li>
-                        <li>Gitlab</li>
+                        <li>Github-flow</li>
+                        <li>Responsive Design</li>
                         <li>Terminal</li>
                     </ul>
                 </div>
@@ -85,9 +98,9 @@
                 </div>
                 <ul class="social_media_links">
                     <li><a href="https://github.com/Daron976" aria-label="Github"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/daron-wiafe-1b88141a6/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/daronkwiafe/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/WiafeDaron" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><i class="fa-brands fa-angellist"></i></li>
+                    <li><a href="https://angel.co/u/daronkwiafe" aria-label="anglellist"><i class="fa-brands fa-angellist"></i></a></li>
                 </ul>
                 <div class="arrow_down">
                     <p><i class="fa-solid fa-arrow-down"></i>  Work</p>
@@ -98,64 +111,75 @@
             <h2 class="mobile_work_header">MY RECENT WORK</h2>
             <h2 class="desktop_work_header">My recent work</h2>
 
-            <div id="border_top" class="work_element">
+            <section id="border_top" class="work_element odd">
                 <div class="supporting_text">
-                    <h3>To Do List</h3>
-                    <p class="work_info">In this project, We build a to do list minimalist websites that allows users to create and modify a to do list.</p>
+                    <h3>Bookshelf</h3>
+                    <p class="work_info">In this project, I create a single-page react web application for a Bookshelf that enable users to add remove books</p>
+                    <ul class="languages projectTwo">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>JS</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-btns">
+                        <a href="https://github.com/Daron976/Bookshelf" class="source-code"><button type="button" value=1 class="btn openPopUpProjectTwo">See Source Code</button></a>
+                        <a href="https://bookshelf976.netlify.app/" class="live-link"><button type="button" value=1 class="btn openPopUpProjectTwo">See Live</button></a>
+                    </div>
+                </div>
+                <img src="images/bookshelf.png" alt="Bookshelf webpage" class="card">
+            </section>
+
+            <section class="work_element work_element_reverse even">
+                <div class="supporting_text">
+                    <h3>Math Magician</h3>
+                    <p class="work_info">In this project, I use a react web application to create a single-page app that contains a working calculator with a random quote.</p>
+                    <ul class="languages projectTwo">
+                        <li>React</li>
+                        <li>JS</li>
+                        <li>ES6</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-btns">
+                        <a href="https://github.com/Daron976/Math-magician" class="source-code"><button type="button" value=1 class="btn openPopUpProjectTwo">See Source Code</button></a>
+                        <a href="https://caltake.netlify.app/" class="live-link"><button type="button" value=1 class="btn openPopUpProjectTwo">See Live</button></a>
+                    </div>
+                </div>
+                <img src="images/mathmagician.png" alt="math magician webpage" class="card">
+            </section>
+            <section class="work_element dbbrewery odd">
+                <img src="images/dbbrewery.png" alt="brewery webpage" class="card">
+                <div class="supporting_text">
+                    <h3>DB Brewery</h3>
+                    <p class="work_info">In this project, We build a web application that renders data from an external API.</p>
+                    <ul class="languages projectTwo">
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>ES6</li>
+                    </ul>
+                    <div class="project-btns">
+                        <a href="https://github.com/Daron976/Ipty-Daron-Capstone" class="source-code"><button type="button" value=1 class="btn openPopUpProjectTwo">See Source Code</button></a>
+                        <a href="https://daron976.github.io/Ipty-Daron-Capstone/dist/" class="live-link"><button type="button" value=1 class="btn openPopUpProjectTwo">See Live</button></a>
+                    </div>
+                </div>
+            </section>
+            <section class="work_element work_element_reverse even">
+                <div class="supporting_text">
+                    <h3>Leaderboard</h3>
+                    <p class="work_info">In this project, We build a Leaderboard that allows users input their scores from a game to be displayed.</p>
                     <ul class="languages projectOne">
+                        <li>JS</li>
                         <li>CSS</li>
                         <li>HTML</li>
-                        <li>JS</li>
                         <li>Webpack</li>
                     </ul>
-                    <button type="button" value=0 class="btn openPopUpProjectOne">See Project</button>
+                    <div class="project-btns">
+                        <a href="https://github.com/Daron976/Leaderboard" class="source-code"><button type="button" value=1 class="btn openPopUpProjectTwo">See Source Code</button></a>
+                        <a href="https://daron976.github.io/Leaderboard/dist/" class="live-link"><button type="button" value=1 class="btn openPopUpProjectTwo">See Live</button></a>
+                    </div>
                 </div>
-                <img src="images/to-do-list-project.png" alt="placeholder for pending images" class="card">
-            </div>
-
-            <div class="work_element work_element_reverse">
-                <div class="supporting_text">
-                    <h3>Multi-Post Stories</h3>
-                    <p class="work_info">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <ul class="languages projectTwo">
-                        <li>css</li>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button type="button" value=1 class="btn openPopUpProjectTwo">See Project</button>
-                </div>
-                <img src="images/placeholder.png" alt="placeholder for pending images" class="card">
-            </div>
-
-            <div class="work_element work_element_reverse">
-                <img src="images/placeholder.png" alt="placeholder for pending images" class="card">
-                <div class="supporting_text">
-                    <h3>Multi-Post Stories</h3>
-                    <p class="work_info">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <ul class="languages projectTwo">
-                        <li>css</li>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button type="button" value=1 class="btn openPopUpProjectTwo">See Project</button>
-                </div>
-            </div>
-            <div class="work_element work_element_reverse">
-                <div class="supporting_text">
-                    <h3>Multi-Post Stories</h3>
-                    <p class="work_info">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <ul class="languages projectTwo">
-                        <li>css</li>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button type="button" value=1 class="btn openPopUpProjectTwo">See Project</button>
-                </div>
-                <img src="images/placeholder.png" alt="placeholder for pending images" class="card">
-            </div>
+                <img src="images/leaderboard.png" alt="leaderboard webpage" class="card">
+            </section>
         </section>
         <section id="contact">
             <div class="contact_us">
@@ -180,11 +204,11 @@
             <div class="btn_links">
                     <ul class="social_media_links">
                         <li><a href="https://github.com/Daron976" aria-label="Github"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/daron-wiafe-1b88141a6/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/daronkwiafe/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
                         <li><a href="https://twitter.com/WiafeDaron" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><i class="fa-brands fa-angellist"></i></li>
+                        <li><a href="https://angel.co/u/daronkwiafe" aria-label="anglellist"><i class="fa-brands fa-angellist"></i></a></li>
                     </ul>
-                    <p>baronjones976@gmail.com</p>
+                    <p>daronkwiafe@gmail.com</p>
             </div>
         </section>
         <script src="script.js"></script>
