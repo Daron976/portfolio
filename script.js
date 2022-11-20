@@ -1,3 +1,4 @@
+/* eslint-disable */
 const header = document.getElementById('header');
 const menu = document.getElementById('menu');
 const menuButton = document.getElementById('menuButton');
